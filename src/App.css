@@ -807,3 +807,223 @@ small, .text-small {
   border-color: var(--primary);
   text-decoration: none;
 }
+
+/* ============================================================
+   HOME — HERO (ShriNeo Capital additions)
+   ============================================================ */
+.hero__tagline {
+  font-size: 0.9rem;
+  color: var(--primary-light);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin-bottom: 32px;
+  margin-top: -16px;
+}
+
+/* ============================================================
+   HOME — ABOUT SECTION
+   ============================================================ */
+.about-section {
+  padding: 88px 0;
+  background-color: var(--bg);
+}
+
+.about-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-section__text h2 {
+  margin-bottom: 20px;
+}
+
+.about-section__text p {
+  font-size: 0.97rem;
+  color: var(--text-body);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.about-section__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Stat block */
+.about-section__stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background-color: var(--surface);
+  overflow: hidden;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 28px;
+  gap: 4px;
+}
+
+.stat-number {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.stat-divider {
+  height: 1px;
+  background-color: var(--border);
+}
+
+@media (max-width: 768px) {
+  .about-section__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .about-section__stat-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .stat-item {
+    flex: 1;
+    min-width: 120px;
+    padding: 18px 20px;
+  }
+  .stat-divider {
+    display: none;
+  }
+}
+
+/* ============================================================
+   HOME — VISION SECTION
+   ============================================================ */
+.vision-section {
+  background-color: var(--accent-light);
+  padding: 80px 0;
+}
+
+.vision-section__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vision-section__label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--primary-light);
+  padding-bottom: 4px;
+}
+
+.vision-section__quote {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.65;
+  font-style: normal;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .vision-section__quote {
+    font-size: 1.05rem;
+  }
+}
+
+/* ============================================================
+   HOME — WHAT'S COMING SECTION
+   ============================================================ */
+.whatcoming-section {
+  padding: 88px 0;
+  background-color: var(--bg);
+}
+
+.whatcoming-section h2 {
+  margin-bottom: 12px;
+}
+
+.whatcoming-section__sub {
+  font-size: 0.97rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 44px;
+}
+
+.whatcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.whatcoming-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 20px 22px;
+}
+
+.whatcoming-card__icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.whatcoming-card__label {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.whatcoming-section__cta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.whatcoming-section__note {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .whatcoming-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .whatcoming-section__cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatcoming-grid {
+    grid-template-columns: 1fr;
+  }
+}
