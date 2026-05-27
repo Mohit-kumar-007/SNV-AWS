@@ -17,8 +17,11 @@ function Navbar() {
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="container">
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          <span className="navbar__brand">ShriNeo Capital</span>
-          <span className="navbar__sub">SHRINEO VITTIYAM PRIVATE LIMITED</span>
+          <img
+            src="/logo.jpg"
+            alt="ShriNeo Vittiyam – ShriNeo Capital"
+            className="navbar__logo-img"
+          />
         </Link>
 
         {/* Desktop links */}

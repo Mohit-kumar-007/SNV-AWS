@@ -1,25 +1,25 @@
 /* ============================================================
    SHRINEO CAPITAL — Global Stylesheet
    SHRINEO VITTIYAM PRIVATE LIMITED
-   Design System: Warm & Earthy, Flat, Professional
+   Design System: Blue & White — Matching Logo Palette
    ============================================================ */
 
 /* ── CSS Custom Properties ── */
 :root {
-  --primary:        #5C4A1E;
-  --primary-light:  #8B6914;
-  --accent:         #C9952A;
-  --accent-light:   #F5E6C8;
-  --bg:             #FDFAF5;
-  --surface:        #FFFFFF;
-  --text-body:      #3D3529;
-  --text-muted:     #7A6A52;
-  --border:         #E8D9BF;
+  --primary:        #1A2E6E;   /* Deep navy blue — logo core */
+  --primary-light:  #2B4BB6;   /* Royal blue — logo highlight */
+  --accent:         #3A6FD8;   /* Medium blue — logo accent */
+  --accent-light:   #E8EFFC;   /* Light lavender-blue — logo bg tint */
+  --bg:             #F0F4FF;   /* Very light blue-white page background */
+  --surface:        #FFFFFF;   /* Pure white cards/surfaces */
+  --text-body:      #1A2240;   /* Dark navy for body text */
+  --text-muted:     #5A6B8A;   /* Muted blue-grey */
+  --border:         #C8D8F5;   /* Light blue border */
 
   --radius-btn:   6px;
   --radius-card:  10px;
   --max-width:    900px;
-  --nav-height:   64px;
+  --nav-height:   68px;
 }
 
 /* ── Reset ── */
@@ -152,7 +152,8 @@ small, .text-small {
   top: 0;
   z-index: 100;
   background-color: var(--surface);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--accent-light);
+  box-shadow: 0 2px 12px rgba(42, 75, 182, 0.08);
   height: var(--nav-height);
   display: flex;
   align-items: center;
@@ -168,13 +169,20 @@ small, .text-small {
 
 .navbar__logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+  align-items: center;
   text-decoration: none;
 }
 
 .navbar__logo:hover {
   text-decoration: none;
+  opacity: 0.88;
+}
+
+.navbar__logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .navbar__brand {
@@ -285,8 +293,8 @@ small, .text-small {
    FOOTER
    ============================================================ */
 .footer {
-  background-color: var(--primary);
-  color: #FDFAF5;
+  background: linear-gradient(160deg, #0F1D52 0%, #1A2E6E 60%, #0D1940 100%);
+  color: #E8F0FF;
   padding: 60px 0 0 0;
 }
 
@@ -299,38 +307,49 @@ small, .text-small {
   padding: 0 20px;
 }
 
+.footer__logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: block;
+  background: rgba(255,255,255,0.08);
+  padding: 4px;
+}
+
 .footer__brand {
   font-size: 1.15rem;
   font-weight: 500;
-  color: #FDFAF5;
+  color: #E8F0FF;
   display: block;
   margin-bottom: 4px;
 }
 
 .footer__brand-sub {
   font-size: 0.875rem;
-  color: rgba(253, 250, 245, 0.7);
+  color: rgba(200, 220, 255, 0.7);
   margin-bottom: 4px;
   display: block;
 }
 
 .footer__cin {
   font-size: 0.8rem;
-  color: rgba(253, 250, 245, 0.5);
+  color: rgba(200, 220, 255, 0.5);
   display: block;
   margin-bottom: 12px;
 }
 
 .footer__desc {
   font-size: 0.875rem;
-  color: rgba(253, 250, 245, 0.75);
+  color: rgba(200, 220, 255, 0.75);
   line-height: 1.6;
 }
 
 .footer__col h4 {
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(253, 250, 245, 0.5);
+  color: rgba(180, 210, 255, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 16px;
@@ -344,18 +363,18 @@ small, .text-small {
 
 .footer__col ul li a {
   font-size: 0.9rem;
-  color: rgba(253, 250, 245, 0.8);
+  color: rgba(200, 220, 255, 0.85);
   text-decoration: none;
 }
 
 .footer__col ul li a:hover {
-  color: #FDFAF5;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .footer__bottom {
   margin-top: 52px;
-  border-top: 1px solid rgba(253, 250, 245, 0.15);
+  border-top: 1px solid rgba(180, 210, 255, 0.15);
   padding: 20px;
   max-width: var(--max-width);
   margin-left: auto;
@@ -364,7 +383,7 @@ small, .text-small {
 
 .footer__bottom p {
   font-size: 0.8rem;
-  color: rgba(253, 250, 245, 0.5);
+  color: rgba(180, 210, 255, 0.5);
   text-align: center;
 }
 
@@ -382,22 +401,37 @@ small, .text-small {
    HOME — HERO
    ============================================================ */
 .hero {
-  background-color: var(--accent-light);
+  background: linear-gradient(160deg, #dce8fd 0%, #eaf1ff 40%, #f0f4ff 100%);
   padding: 100px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(58,111,216,0.10) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .hero__badge {
   display: inline-block;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--primary-light);
-  background-color: var(--accent-light);
-  border: 1px solid var(--primary-light);
+  background-color: rgba(42,75,182,0.08);
+  border: 1px solid rgba(42,75,182,0.25);
   border-radius: 100px;
   padding: 5px 14px;
   margin-bottom: 32px;
   letter-spacing: 0.01em;
+  backdrop-filter: blur(4px);
 }
 
 .hero h1 {
@@ -481,7 +515,7 @@ small, .text-small {
    HOME — LENDER PARTNERS
    ============================================================ */
 .partners {
-  background-color: var(--accent-light);
+  background: linear-gradient(135deg, #dce8fd 0%, #e8effc 100%);
   padding: 80px 0;
   text-align: center;
 }
@@ -517,18 +551,18 @@ small, .text-small {
    HOME — COMING SOON BANNER
    ============================================================ */
 .launch-banner {
-  background-color: var(--primary);
+  background: linear-gradient(135deg, #1A2E6E 0%, #2B4BB6 50%, #1A2E6E 100%);
   padding: 80px 0;
   text-align: center;
 }
 
 .launch-banner h2 {
-  color: #FDFAF5;
+  color: #FFFFFF;
   margin-bottom: 16px;
 }
 
 .launch-banner p {
-  color: rgba(253, 250, 245, 0.8);
+  color: rgba(200, 220, 255, 0.85);
   max-width: 540px;
   margin: 0 auto 32px auto;
   font-size: 0.95rem;
@@ -568,7 +602,7 @@ small, .text-small {
 .launch-banner__btn {
   padding: 11px 20px;
   background-color: var(--accent);
-  color: #FDFAF5;
+  color: #FFFFFF;
   border: none;
   border-radius: 0 var(--radius-btn) var(--radius-btn) 0;
   font-family: 'DM Sans', sans-serif;
@@ -579,18 +613,18 @@ small, .text-small {
 }
 
 .launch-banner__btn:hover {
-  background-color: #b8841f;
+  background-color: #2558b8;
 }
 
 .launch-banner__success {
   font-size: 0.9rem;
-  color: var(--accent-light);
+  color: #a8d4ff;
   margin-bottom: 14px;
 }
 
 .launch-banner__note {
   font-size: 0.8rem;
-  color: rgba(253, 250, 245, 0.4);
+  color: rgba(180, 210, 255, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -736,7 +770,7 @@ small, .text-small {
 .contact-success {
   margin-top: 12px;
   padding: 14px 16px;
-  background-color: var(--accent-light);
+  background-color: #e8f0fc;
   border: 1px solid var(--border);
   border-radius: var(--radius-btn);
   font-size: 0.9rem;
@@ -909,7 +943,7 @@ small, .text-small {
    HOME — VISION SECTION
    ============================================================ */
 .vision-section {
-  background-color: var(--accent-light);
+  background: linear-gradient(135deg, #dce8fd 0%, #e8effc 100%);
   padding: 80px 0;
 }
 

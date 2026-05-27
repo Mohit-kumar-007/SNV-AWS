@@ -14,6 +14,7 @@ function Footer() {
       <div className="footer__grid">
         {/* Column 1 — Brand */}
         <div>
+          <img src="/logo.jpg" alt="ShriNeo Capital Logo" className="footer__logo-img" />
           <span className="footer__brand">ShriNeo Capital</span>
           <span className="footer__brand-sub">A brand of SHRINEO VITTIYAM PRIVATE LIMITED</span>
           <span className="footer__cin">Jaipur, Rajasthan, India</span>
@@ -26,7 +27,7 @@ function Footer() {
               display: 'inline-block',
               marginTop: '12px',
               fontSize: '0.875rem',
-              color: 'rgba(253,250,245,0.7)',
+              color: 'rgba(224,236,255,0.8)',
             }}
           >
             admin@shrineocapital.com
