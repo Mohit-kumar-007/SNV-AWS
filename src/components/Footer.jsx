@@ -61,7 +61,7 @@ function Footer() {
       {/* Bottom bar */}
       <div className="footer__bottom">
         <p>
-          © 2025 ShriNeo Capital · SHRINEO VITTIYAM PRIVATE LIMITED · All rights reserved. · Operated under RBI Digital Lending Guidelines 2025.
+          © 2026 ShriNeo Capital · SHRINEO VITTIYAM PRIVATE LIMITED · All rights reserved. · Operated under RBI Digital Lending Guidelines 2026.
         </p>
       </div>
     </footer>

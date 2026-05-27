@@ -5,7 +5,7 @@ function Privacy() {
     <article className="policy-page">
       <h1>Privacy Policy</h1>
       <span className="policy-date">
-        Effective Date: 1 January 2025 &nbsp;|&nbsp; Last Updated: April 2026
+        Effective Date: 1 January 2026 &nbsp;|&nbsp; Last Updated: April 2026
       </span>
 
       <h2>1. Introduction</h2>
@@ -15,7 +15,7 @@ function Privacy() {
         partner lenders. This Privacy Policy explains how we collect, use, store, and protect your
         personal data in compliance with applicable Indian laws, including the Information Technology
         Act 2000, the IT (Amendment) Act 2008, the Digital Personal Data Protection Act 2023 (DPDPA),
-        and the Reserve Bank of India's Digital Lending Guidelines 2025.
+        and the Reserve Bank of India's Digital Lending Guidelines 2026.
       </p>
 
       <h2>2. Who We Are</h2>
@@ -80,7 +80,7 @@ function Privacy() {
         All personal data is stored exclusively on servers located in India (AWS ap-south-1, Mumbai
         region). We do not transfer personal data outside India. In any case where data processing
         tools operate internationally, your personal data is deleted from those systems within 24
-        hours, in compliance with RBI Digital Lending Directions 2025.
+        hours, in compliance with RBI Digital Lending Directions 2026.
       </p>
 
       <h2>6. Data Security</h2>
