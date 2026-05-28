@@ -153,11 +153,11 @@ function Contact() {
       <div className="contact-info">
         <p>
           For urgent matters or compliance-related queries, you can also reach us at{' '}
-          <a href="mailto:hello@shrineo.in">hello@shrineo.in</a>
+          <a href="mailto:hello@shrineocapital.com">hello@shrineocapital.com</a>
         </p>
         <p>
           Grievance Officer:{' '}
-          <a href="mailto:grievance@shrineo.in">grievance@shrineo.in</a>
+          <a href="mailto:grievance@shrineocapital.com">grievance@shrineocapital.com</a>
         </p>
         <p>Response time: within 2 business days</p>
       </div>

@@ -5,7 +5,7 @@ function Privacy() {
     <article className="policy-page">
       <h1>Privacy Policy</h1>
       <span className="policy-date">
-        Effective Date: 1 January 2026 &nbsp;|&nbsp; Last Updated: April 2026
+        Effective Date: 1 January 2026 &nbsp;|&nbsp; Last Updated: May 2026
       </span>
 
       <h2>1. Introduction</h2>
@@ -117,7 +117,7 @@ function Privacy() {
       </ul>
       <p>
         To exercise any of these rights, contact us at:{' '}
-        <a href="mailto:privacy@shrineo.in">privacy@shrineo.in</a>
+        <a href="mailto:privacy@shrineocapital.com">privacy@shrineocapital.com</a>
       </p>
 
       <h2>8. Data Retention</h2>
@@ -174,7 +174,7 @@ function Privacy() {
         </li>
         <li>
           <strong>Email:</strong>{' '}
-          <a href="mailto:grievance@shrineo.in">grievance@shrineo.in</a>
+          <a href="mailto:grievance@shrineocapital.com">grievance@shrineocapital.com</a>
         </li>
         <li>
           <strong>Response time:</strong> We will acknowledge your complaint within 24 hours and
@@ -193,7 +193,7 @@ function Privacy() {
       <ul>
         <li>
           For privacy-related queries:{' '}
-          <a href="mailto:privacy@shrineo.in">privacy@shrineo.in</a>
+          <a href="mailto:privacy@shrineocapital.com">privacy@shrineocapital.com</a>
         </li>
         <li>For general queries: Use the Contact form on our website.</li>
       </ul>
